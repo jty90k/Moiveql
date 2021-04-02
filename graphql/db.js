@@ -1,85 +1,38 @@
-export const people = [
+let movies = [
   {
-    id: "0",
-    name: "Jty",
-    age: 22,
-    sex: "Male",
+    id: 0,
+    name: "Star Wars - The new one",
+    score: 1,
   },
   {
-    id: "1",
-    name: "Kim",
-    age: 16,
-    sex: "Female",
+    id: 1,
+    name: "Avengers - The new one",
+    score: 8,
   },
   {
-    id: "2",
-    name: "Lee",
-    age: 16,
-    sex: "Female",
+    id: 2,
+    name: "The Godfather I",
+    score: 99,
   },
   {
-    id: "3",
-    name: "Park",
-    age: 16,
-    sex: "Female",
-  },
-  {
-    id: "4",
-    name: "Natasha",
-    age: 16,
-    sex: "Female",
-  },
-  {
-    id: "5",
-    name: "Japan Girl",
-    age: 16,
-    sex: "Female",
-  },
-  {
-    id: "6",
-    name: "USA Girl",
-    age: 16,
-    sex: "Female",
-  },
-  {
-    id: "7",
-    name: "German",
-    age: 16,
-    sex: "Female",
-  },
-  {
-    id: "8",
-    name: "Brazil Girl",
-    age: 16,
-    sex: "Female",
-  },
-  {
-    id: "9",
-    name: "England Girl",
-    age: 16,
-    sex: "Female",
-  },
-  {
-    id: "10",
-    name: "Franch Girl",
-    age: 16,
-    sex: "Female",
-  },
-  {
-    id: "11",
-    name: "Grace Girl",
-    age: 16,
-    sex: "Female",
-  },
-  {
-    id: "12",
-    name: "Swiden Girl",
-    age: 16,
-    sex: "Female",
+    id: 3,
+    name: "Logan",
+    score: 2,
   },
 ];
+export const getMovies = () => movies;
 
-export const getByld = (id) => {
-  const filteredPeople = people.filter((person) => person.id === String(id));
-  return filteredPeople[0];
+export const getById = (id) => {
+  const filteredMovies = Movies.filter((movie) => movie.id === String(id));
+  return filteredMovies[0];
+};
+
+export const deleteMovie = (id) => {
+  const cleanedMovies = movies.filter((movie) => movie.id !== String(id));
+  if (movies.length > cleanedMovies.length) {
+    movie = cleanedMovies;
+    return true;
+  } else {
+    return false;
+  }
 };
