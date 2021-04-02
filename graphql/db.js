@@ -47,9 +47,39 @@ export const people = [
     age: 16,
     sex: "Female",
   },
+  {
+    id: "8",
+    name: "Brazil Girl",
+    age: 16,
+    sex: "Female",
+  },
+  {
+    id: "9",
+    name: "England Girl",
+    age: 16,
+    sex: "Female",
+  },
+  {
+    id: "10",
+    name: "Franch Girl",
+    age: 16,
+    sex: "Female",
+  },
+  {
+    id: "11",
+    name: "Grace Girl",
+    age: 16,
+    sex: "Female",
+  },
+  {
+    id: "12",
+    name: "Swiden Girl",
+    age: 16,
+    sex: "Female",
+  },
 ];
 
 export const getByld = (id) => {
-  const filteredPeople = people.filter((person) => people.id === id);
+  const filteredPeople = people.filter((person) => person.id === String(id));
   return filteredPeople[0];
 };
