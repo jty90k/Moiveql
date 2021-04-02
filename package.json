@@ -1,0 +1,23 @@
+{
+  "name": "Movieql",
+  "version": "1.0.0",
+  "description": "Movie API with Graphql",
+  "main": "index.js",
+  "repository": "https://github.com/jty90k/Movieql",
+  "author": "Jang Tae Young <jty90k@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-node": "0.0.1-security",
+    "babel-preset-env": "1.7.0",
+    "graphql-yoga": "1.18.3"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.7"
+  }
+}
